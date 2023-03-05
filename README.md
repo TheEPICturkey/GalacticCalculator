@@ -2,7 +2,7 @@
 
 #### (Brief Description of Application)
 
-#### By Billy Lee
+#### By Brandon Spear
 
 ## Technologies Used
 
