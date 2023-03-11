@@ -3,4 +3,8 @@ export default class Age{
     this.age = age;
   }
 
+  mercuryAge() {
+    return parseFloat((this.age / 0.24).toFixed(2));
+  }
+
 }
