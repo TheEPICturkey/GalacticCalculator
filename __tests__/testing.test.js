@@ -37,4 +37,17 @@ describe("Age ", () => {
     });
   });
 
+  describe("aPastBirthday", () => {
+    it("should display years on each planet from a previous birthday", () => {
+      const yearsSince12thBirthday = myAge.aPastBirthday(12);
+      expect(yearsSince12thBirthday).toEqual({
+        earthYears: 10,
+        mercuryYears: '41.67',
+        venusYears: '16.13',
+        marsYears: '5.32',
+        jupiterYears: '0.84'
+      });
+    });
+  });
+
 })
