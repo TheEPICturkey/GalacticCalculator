@@ -13,4 +13,10 @@ describe("Age ", () => {
     });
   });
 
+  describe("mercuryAge()", () => {
+    it("should display UA in Mercury years", () => {
+      expect(myAge.mercuryAge()).toEqual(91.67);
+    });
+  });
+
 })
