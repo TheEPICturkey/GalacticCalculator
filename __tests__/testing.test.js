@@ -31,4 +31,10 @@ describe("Age ", () => {
     });
   });
 
+  describe("jupiterAge()", () => {
+    it("should display UA in Jupiter years", () => {
+      expect(myAge.jupiterAge()).toEqual(1.85);
+    });
+  });
+
 })
