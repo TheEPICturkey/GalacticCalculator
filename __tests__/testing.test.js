@@ -19,4 +19,10 @@ describe("Age ", () => {
     });
   });
 
+  describe("venusAge()", () => {
+    it("should display UA in Venus years", () => {
+      expect(myAge.venusAge()).toEqual(35.48);
+    });
+  });
+
 })
