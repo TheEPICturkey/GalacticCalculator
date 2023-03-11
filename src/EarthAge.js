@@ -7,4 +7,8 @@ export default class Age{
     return parseFloat((this.age / 0.24).toFixed(2));
   }
 
+  venusAge() {
+    return parseFloat((this.age / 0.62).toFixed(2));
+  }
+
 }
