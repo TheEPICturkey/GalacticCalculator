@@ -25,4 +25,10 @@ describe("Age ", () => {
     });
   });
 
+  describe("marsAge()", () => {
+    it("should display UA in Mars years", () => {
+      expect(myAge.marsAge()).toEqual(11.70);
+    });
+  });
+
 })
