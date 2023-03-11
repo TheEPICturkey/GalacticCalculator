@@ -19,4 +19,15 @@ export default class Age{
     return parseFloat((this.age / 11.86).toFixed(2));
   }
 
+  aPastBirthday(pastBirthday) {
+    const earthYearsPassed = this.age - pastBirthday;
+    return {
+      earthYears: Math.floor(earthYearsPassed),
+      mercuryYears: (earthYearsPassed / 0.24).toFixed(2),
+      venusYears: (earthYearsPassed / 0.62).toFixed(2),
+      marsYears: (earthYearsPassed / 1.88).toFixed(2),
+      jupiterYears: (earthYearsPassed / 11.86).toFixed(2),
+    };
+  }
+
 }
