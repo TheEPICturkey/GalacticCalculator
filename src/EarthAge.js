@@ -11,4 +11,8 @@ export default class Age{
     return parseFloat((this.age / 0.62).toFixed(2));
   }
 
+  marsAge() {
+    return parseFloat((this.age / 1.88).toFixed(2));
+  }
+
 }
