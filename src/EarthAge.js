@@ -30,4 +30,15 @@ export default class Age{
     };
   }
 
+  nextBirthday(untilBirthday) {
+    const earthYearsUntil = untilBirthday - this.age;
+    return {
+      earthYears: Math.floor(earthYearsUntil),
+      mercuryYears: (earthYearsUntil / 0.24).toFixed(2),
+      venusYears: (earthYearsUntil / 0.62).toFixed(2),
+      marsYears: (earthYearsUntil / 1.88).toFixed(2),
+      jupiterYears: (earthYearsUntil / 11.86).toFixed(2),
+    };
+  }
+
 }
