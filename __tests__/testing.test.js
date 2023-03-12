@@ -50,4 +50,17 @@ describe("Age ", () => {
     });
   });
 
+  describe("nextBirthday", () => {
+    it("should return the correct number of years on each planet until a future birthday", () => {
+      const yearsUntil27thBirthday = myAge.nextBirthday(27);
+      expect(yearsUntil27thBirthday).toEqual({
+        earthYears: 5,
+        mercuryYears: '20.83',
+        venusYears: '8.06',
+        marsYears: '2.66',
+        jupiterYears: '0.42'
+      });
+    });
+  });
+
 })
